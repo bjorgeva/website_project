@@ -248,10 +248,10 @@
                             <p>Festingin sem heldur uppi hillunum virkar eins og nagli, en hún hefur haus sem passar að hún gangi ekki of langt inn í fótinn og gerir hillunni kleift að sitja ofan á henni. </p>
                             <img src="images/v5/festingNagli.png" alt="" width="400" height="310">
                             <p>Lokaútkomu teikningar má sjá hér að neðan.</p>
-                            <img src="images/v5/lokautkoma.png" alt="" width="400" height="450">
+                            <img src="images/v5/lokautkoma.png" alt="" width="450" height="450">
                             <p>Ef smellt er á takkann hér að neðan er *.dxf skrá hönnunarinnar hlaðið niður.</p>
                             <ul class="actions fit small">
-                                <li><a href="https://bjorgeva.github.io/website_project/hopverkefni_bord_samsetning.dxf" class="button primary fit" target="">VCarve: Undirbúningur</a></li></ul>
+                                <li><a href="https://bjorgeva.github.io/website_project/hopverkefni_bord_samsetning.dxf" class="button primary fit" target="">Hönnunarskjöl - Hliðarborð</a></li></ul>
                             <hr/>
                             <h2>Undirbúningur fyrir fræsingu og VCarve</h2>
                             <p>Þegar teikningu hefur verið lokið þarf að gera útflatning af öllum pörtum hennar. Það er gert með því að nota Align skipunina og leggja alla parta á x planið.</p>
@@ -292,7 +292,6 @@
                                                 <li>Ath. að fræsir þarf að vera undir stöðugu eftirliti</li>
                                                 <li>Að lokinni fræsingu þarf að færa fræsitönn í örugga stöðu og slökkva á fræsi</li>
 											</ul>
-                                            
                                 </div>
                             </div>
                             <p>Hér má sjá ryksugu sem tengd er fræsinum.</p>
@@ -339,13 +338,34 @@
                             <img src="images/v6/motkassiskurdur.png" alt="" width="500" height="400">
                             <p>Þegar mótinu hefur verið skipt í tvennt er þarf að búa til festingar til þess að mótið smelli saman. Til þess eru gerðar holur og kúlur sem passa í þær. Til að búa til holurnar eru settar kúlur á öll fjögur hornin á öðrum helmingnum af mótinu. Þær eru svo skornar út úr hinum helmingnum og virka þá sem festing.</p>
                             <img src="images/v6/motkulurhorn.png" alt="" width="500" height="400">
-                            
-                            <p>Þá er komið að því að búa til holu til þess að geta hellt efni inn í mótið. Hole skipunin er notuð og búin er til hola við miðjuna á botni mótsins. </p>
+                            <p>Þá er komið að því að búa til holu til þess að geta hellt efni inn í mótið. Hole skipunin er notuð og búin er til hola á einni hliðinni, við skilin á botni og toppi mótsins. </p>
                             <img src="images/v6/mothola.png" alt="" width="600" height="400">
-                            <p>Sett er upp Draft Analysis til þess að sjá hvar mögulegir vankantar gætu orðið á mótinu. </p>
-                            <img src="images/v6/motgraenarauda.png" alt="" width="500" height="400">
+                            <p>Nú er mótið tilbúið, en þá þarf að teikna negatívu af mótinu til þess að geta fræst út í vax eða frauðplast og í framhaldinu búið til mótið úr sílíkoni eða þ.h. Fyrst þarf að stilla hlutunum tveimur upp hlið við hlið.</p>
+                            <img src="images/v6/hlidvidhlid.png" alt="" width="500" height="400">
+                            <p>Þá er teiknaður kassi sem nær utan um báða hlutana, en þetta er það sem verður að lokum fræst út.</p>
+                            <img src="images/v6/storkassi.png" alt="" width="500" height="400">
+                            <p>Þá er Cut skipunin notuð til þess að hola út form beggja hluta mótsins.</p>
+                            <img src="images/v6/motskorid.png" alt="" width="500" height="400">
                             <hr/>
                             <h2>Toolpaths</h2>
+                            <p>Næsta, og síðasta, skrefið er að setja upp toolpaths ásamt feeds and speeds.</p>
+                            <p>Þá er farið inn í Manufacture í Fusion360 og Milling valið. </p>
+                            <img src="images/v6/milling.png" alt="" width="300" height="400">
+                            <p>Þá þarf að velja hverskonar fræsingu á að framkvæma, en í þessu tilfelli er það 2D pocket. Fyrir fræsinguna eru botnar mótsins valdir, en þeir eru viðmiðið fyrir borinn.</p>
+                            <img src="images/v6/2dpocket.png" alt="" width="600" height="400">
+                            <p>Byrjað er á að stilla Setup. Þar er stilltur núllpunktur fræsingarinnar, en hann er settur á eitt af hornum negatívunnar. Operation Type er sett sem Milling og Stock from solid, en þessar stillingar má sjá hér að neðan.</p>
+                            <img src="images/v6/setup.png" alt="" width="600" height="400"><img src="images/v6/stock.png" alt="" width="300" height="200">
+                            <p>Að lokum þarf að stilla toolpaths fyrir fræsinguna. Valið er tól númer 14, en það er eitt þeirra sem til er í FabLab Reykjavík. </p>
+                            <img src="images/v6/tool.png" alt="" width="310" height="600">
+                            <p>Í Geometry er valið að tólið skeri innan markanna, þ.e. Machining boundary og Tool inside. Þá er Stock valið sem botnarnir, eins og fyrr kom fram. Hér má sjá hvernig toolpaths líta út, ásamt þessum stillingum.</p>
+                            <img src="images/v6/toolpaths.png" alt="" width="650" height="400">
+                            <p>Myndband sem sýnir simulation af fræsingunni má svo sjá hér að neðan.</p>
+                            <video width="500" height="300" controls>
+                            <source src="images/v6/toolvideo.mp4" type="video/mp4">
+                            </video>
+                            <p>Hér má finna hönnunarskjöl á *.dxf formi.</p>
+                            <ul class="actions fit small">
+                                <li><a src="kertastjaki-final.dxf" class="button primary fit" target="">Hönnunarskjöl - Mót</a></li></ul>
                             <hr/>
                         </div>
                            
